@@ -1,10 +1,10 @@
-[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/${REPO_ID}/${BRANCH_NAME}.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-${REPO_NAME}-${REPO_ID})
-[![Build Status](https://travis-ci.org/OCA/${REPO_NAME}.svg?branch=${BRANCH_NAME})](https://travis-ci.org/OCA/${REPO_NAME})
-[![codecov](https://codecov.io/gh/OCA/${REPO_NAME}/branch/${BRANCH_NAME}/graph/badge.svg)](https://codecov.io/gh/OCA/${REPO_NAME})
+[![Runbot Status](https://runbot.odoo-community.org/runbot/badge/flat/265/11.0.svg)](https://runbot.odoo-community.org/runbot/repo/github-com-oca-l10n-poland-265)
+[![Build Status](https://travis-ci.org/OCA/l10n-poland.svg?branch=11.0)](https://travis-ci.org/OCA/l10n-poland)
+[![codecov](https://codecov.io/gh/OCA/l10n-poland/branch/11.0/graph/badge.svg)](https://codecov.io/gh/OCA/l10n-poland)
 
-# ${REPO_NAME_VERBOSE}
+# l10n-poland
 
-${REPO_DESCRIPTION}
+Odoo Polish Localization
 
 [//]: # (addons)
 This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
