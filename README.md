@@ -7,6 +7,13 @@
 Odoo Polish Localization
 
 [//]: # (addons)
+
+Available addons
+----------------
+addon | version | summary
+--- | --- | ---
+[account_bank_statement_import_mt940_pl_raiffeisen](account_bank_statement_import_mt940_pl_raiffeisen/) | 11.0.1.0.0 | MT940 Raiffeisen Format Bank Statements Import
+
 [//]: # (end addons)
 
 ----
