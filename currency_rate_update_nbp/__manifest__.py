@@ -4,9 +4,8 @@
     "name": "Currency Rate Update National Bank of Poland",
     "version": "14.0.1.0.0",
     "category": "Accounting & Finance",
-    "summary": "Allows to download currency exchange rates from "
-    "National bank of Poland",
-    "author": "Akretion,Odoo Community Association (OCA),",
+    "summary": "Allows to download currency exchange rates from National bank of Poland",
+    "author": "Akretion, Odoo Community Association (OCA)",
     "website": "https://github.com/OCA/l10n-poland",
     "license": "AGPL-3",
     "depends": [
