@@ -1,8 +1,8 @@
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl.html).
 
 import requests
-
 from lxml import etree
+
 from odoo import fields, models
 
 
@@ -17,9 +17,15 @@ class ResCurrencyRateProviderNBP(models.Model):
     def rate_retrieve(self, dom, ns, curr):
         """Parse a dom node to retrieve currencies data"""
         res = {}
-        xpath_rate_currency = ("/tabela_kursow/pozycja[kod_waluty='%s']/" "kurs_sredni/text()") % (curr.upper())
-        xpath_rate_ref = ("/tabela_kursow/pozycja[kod_waluty='%s']/" "przelicznik/text()") % (curr.upper())
-        res["rate_currency"] = float(dom.xpath(xpath_rate_currency, namespaces=ns)[0].replace(",", "."))
+        xpath_rate_currency = (
+            "/tabela_kursow/pozycja[kod_waluty='%s']/" "kurs_sredni/text()"
+        ) % (curr.upper())
+        xpath_rate_ref = (
+            "/tabela_kursow/pozycja[kod_waluty='%s']/" "przelicznik/text()"
+        ) % (curr.upper())
+        res["rate_currency"] = float(
+            dom.xpath(xpath_rate_currency, namespaces=ns)[0].replace(",", ".")
+        )
         res["rate_ref"] = float(dom.xpath(xpath_rate_ref, namespaces=ns)[0])
         return res
 
@@ -74,7 +80,9 @@ class ResCurrencyRateProviderNBP(models.Model):
         """Make request to NBP and fetch today's rates"""
         self.ensure_one()
         if self.service != "NBP":
-            return super()._obtain_rates(base_currency, currencies, date_from, date_to)  # pragma: no cover
+            return super()._obtain_rates(
+                base_currency, currencies, date_from, date_to
+            )  # pragma: no cover
 
         # LastA.xml is always the most recent one
         url = "http://www.nbp.pl/kursy/xml/LastA.xml"
