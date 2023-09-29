@@ -2,7 +2,7 @@
 
 from unittest import mock
 
-from odoo.tests import SavepointCase, tagged
+from odoo.tests import TransactionCase, tagged
 
 from . import response_data
 
@@ -15,7 +15,7 @@ def mocked_requests_get(*args, **kwargs):
 
 
 @tagged("post_install", "-at_install")
-class TestResCurrencyRateProvider(SavepointCase):
+class TestResCurrencyRateProvider(TransactionCase):
     @classmethod
     def setUpClass(cls):
         """Initial common set up class for all tests."""

@@ -86,7 +86,7 @@ class ResCurrencyRateProviderNBP(models.Model):
 
         # LastA.xml is always the most recent one
         url = "http://www.nbp.pl/kursy/xml/LastA.xml"
-        content = requests.get(url).content
+        content = requests.get(url, timeout=5).content
 
         dom = etree.fromstring(content)
         ns = {}
