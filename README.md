@@ -17,7 +17,11 @@ TODO: add repo description.
 
 [//]: # (addons)
 
-This part will be replaced when running the oca-gen-addons-table script from OCA/maintainer-tools.
+Available addons
+----------------
+addon | version | maintainers | summary
+--- | --- | --- | ---
+[currency_rate_update_nbp](currency_rate_update_nbp/) | 16.0.1.0.0 |  | Allows to download currency exchange rates from National bank of Poland
 
 [//]: # (end addons)
 
