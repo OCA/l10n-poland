@@ -21,7 +21,7 @@ Available addons
 ----------------
 addon | version | maintainers | summary
 --- | --- | --- | ---
-[currency_rate_update_nbp](currency_rate_update_nbp/) | 16.0.1.0.0 |  | Allows to download currency exchange rates from National bank of Poland
+[currency_rate_update_nbp](currency_rate_update_nbp/) | 16.0.1.0.1 |  | Allows to download currency exchange rates from National bank of Poland
 
 [//]: # (end addons)
 
