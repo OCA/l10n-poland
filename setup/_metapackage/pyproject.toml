@@ -1,0 +1,11 @@
+[project]
+name = "odoo-addons-oca-l10n-poland"
+version = "19.0.20261027.0"
+dependencies = [
+    "odoo-addon-currency_rate_update_nbp==19.0.*",
+]
+classifiers=[
+    "Programming Language :: Python",
+    "Framework :: Odoo",
+    "Framework :: Odoo :: 19.0",
+]
