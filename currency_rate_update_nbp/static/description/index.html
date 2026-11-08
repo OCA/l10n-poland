@@ -400,19 +400,25 @@ associated to the national bank of Poland <a class="reference external" href="ht
 <div class="section" id="configuration">
 <h2><a class="toc-backref" href="#toc-entry-2">Configuration</a></h2>
 <p>To enable scheduled currency rates update:</p>
-<p># Go to Invoicing &gt; Configuration &gt; Settings # Ensure Automatic Currency
-Rates (OCA) is checked</p>
-<p>To configure currency rates providers:</p>
-<p># Go to Invoicing &gt; Configuration &gt; Currency Rates Providers # Create
-and configure one or more providers</p>
+<ol class="arabic simple">
+<li>Go to <em>Invoicing &gt; Configuration &gt; Settings</em>.</li>
+<li>Make sure <em>Automatic Currency Rates (OCA)</em> is checked.</li>
+</ol>
+<p>To configure the National Bank of Poland provider:</p>
+<ol class="arabic simple">
+<li>Go to <em>Invoicing &gt; Configuration &gt; Currency Rates Providers</em>.</li>
+<li>Create a provider and select <em>National Bank of Poland</em> as the
+<em>Provider</em>.</li>
+<li>Select the currencies to update and save.</li>
+</ol>
 </div>
 <div class="section" id="known-issues-roadmap">
 <h2><a class="toc-backref" href="#toc-entry-3">Known issues / Roadmap</a></h2>
 <ul class="simple">
-<li>This module only allow to get the last rate from the National Bank of
-Poland. It would be possible to implement a rate update per date with
-further development as the National Bank of Poland leave an historic
-available.</li>
+<li>This module only fetches the latest rates published by the National
+Bank of Poland (table A). The dates given in the update rates wizard
+are ignored. The National Bank of Poland also publishes historical
+rates, so updating rates for a date range could be added later.</li>
 </ul>
 </div>
 <div class="section" id="bug-tracker">
