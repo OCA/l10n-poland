@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="l10n_pl_eb_connect_form" model="ir.ui.view">
+        <field name="name">l10n_pl.eb.connect.form</field>
+        <field name="model">l10n_pl.eb.connect</field>
+        <field name="arch" type="xml">
+            <form string="Connect bank">
+                <field name="step" invisible="1" />
+                <field name="company_id" invisible="1" />
+                <field name="has_credentials" invisible="1" />
+                <field name="control_panel_url" invisible="1" />
+                <field name="sign_in_url" invisible="1" />
+
+                <!-- Step 1: do you have an application? -->
+                <div invisible="step != 'start'" class="o_l10n_pl_eb_start">
+                    <h2>Do you already have an application in Enable Banking?</h2>
+                    <p>
+                        Odoo connects to banks through <strong
+                    >Enable Banking</strong>, a licensed account information
+                        service provider (AISP) supervised in the EU. You need a
+                        free account there and one <strong
+                    >application</strong>: an application ID and a key file
+                        (.pem). You set it up once. After that, every bank is one
+                        click and a login in the bank.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2 mt-4">
+                        <button
+                            name="action_have_application"
+                            type="object"
+                            class="btn btn-primary btn-lg"
+                            string="Yes, I have the application"
+                        />
+                        <button
+                            name="action_show_guide"
+                            type="object"
+                            class="btn btn-secondary btn-lg"
+                            string="No, show me how to create it"
+                        />
+                    </div>
+                    <p class="text-muted mt-3" invisible="not has_credentials">
+                        An application is already saved for this company.
+                        Entering a new one replaces it.
+                    </p>
+                </div>
+
+                <!-- Step 2: guide -->
+                <div invisible="step != 'guide'">
+                    <h2>Create the application in Enable Banking</h2>
+                    <p>It takes about 10 minutes. Keep this window open.</p>
+                    <group>
+                        <field
+                            name="environment"
+                            widget="radio"
+                            string="What do you want to connect?"
+                        />
+                    </group>
+                    <ol class="o_l10n_pl_eb_guide">
+                        <li class="mb-3">
+                            <strong>Create a free account.</strong>
+                            Open <a
+                            href="https://enablebanking.com/sign-in/"
+                            target="_blank"
+                        >enablebanking.com/sign-in</a> and enter your e-mail.
+                            Click the login link you receive by e-mail. The
+                            account is created on the first login.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Register the application.</strong>
+                            In the top menu open <a
+                            href="https://enablebanking.com/cp/applications"
+                            target="_blank"
+                        >API applications</a> and fill in the form
+                            <em>Add a new application</em>:
+                            <ul>
+                            <li invisible="environment != 'production'">
+                                    environment: <strong>Production</strong>;
+                                </li>
+                            <li invisible="environment != 'sandbox'">
+                                    environment: <strong>Sandbox</strong> (test
+                                    banks, sample data, nothing real);
+                                </li>
+                            <li>
+                                    private key: leave the first option, <em
+                            >generate in the browser</em>;
+                                </li>
+                            <li>
+                                    application name: for example your company
+                                    name (the bank shows it when you give the
+                                    consent);
+                                </li>
+                            <li>
+                                    <em>Allowed redirect URLs</em>: paste this
+                                    address:
+                                    <field
+                                name="redirect_url"
+                                widget="CopyClipboardChar"
+                                class="d-block mt-1"
+                            />
+                                </li>
+                            <li invisible="environment != 'production'">
+                                    <em>Privacy URL</em> and <em>Terms URL</em>
+                                    are required in Production: links to the
+                                    privacy policy and terms of your website.
+                                    Also enter an e-mail for data protection
+                                    matters.
+                                </li>
+                        </ul>
+                            Click <strong>Register</strong>. The browser
+                            downloads a <strong>.pem</strong> file named like
+                            <code>aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee.pem</code>.
+                            The file name is the application ID. Keep the file
+                            safe and do not send it by e-mail or chat.
+                        </li>
+                        <li class="mb-3" invisible="environment != 'production'">
+                            <strong>Link your accounts.</strong>
+                            On the list of applications click <em>Activate by
+                            linking accounts</em> (Link accounts) next to the new
+                            application. Choose Poland, the bank and
+                            <em>Business</em> or <em>Personal</em>, log in to the
+                            bank and tick the accounts. Repeat for every bank.
+                            Without this the application sees no accounts. The
+                            bank asks here for a consent of one day only: it just
+                            puts the accounts on the allowed list. Odoo will ask
+                            for its own consent of up to 180 days.
+                        </li>
+                        <li class="mb-3" invisible="environment != 'sandbox'">
+                            <strong>Test bank.</strong>
+                            In the next step choose a test bank (for example
+                            <em>Mock ASPSP</em>) and log in with the test data
+                            from the Enable Banking documentation.
+                        </li>
+                        <li class="mb-3">
+                            <strong>Come back here</strong> and click
+                            <em>I have the application</em>: upload the .pem file
+                            and choose your bank.
+                        </li>
+                    </ol>
+                    <div
+                        class="alert alert-info"
+                        role="alert"
+                        invisible="environment != 'production'"
+                    >
+                        Production is free in the restricted mode, for the
+                        accounts you link yourself. For permanent use in a company
+                        Enable Banking requires a contract and verification of the
+                        company; ask them for the price.
+                    </div>
+                </div>
+
+                <!-- Step 3: application ID and key -->
+                <div invisible="step != 'credentials'">
+                    <h2>Application ID and key</h2>
+                    <p>
+                        Upload the .pem file downloaded when you registered the
+                        application. The application ID is usually filled in
+                        from the file name; if the field stays empty, enter it
+                        yourself (the file name without .pem, or the ID from the
+                        list of API applications). Only accounting managers can
+                        see the key.
+                    </p>
+                    <field name="active_connection_count" invisible="1" />
+                    <div
+                        class="alert alert-warning"
+                        role="alert"
+                        invisible="not active_connection_count"
+                    >
+                        Bank connections of this company use the current
+                        application. After changing it they stop working until
+                        you connect the banks again.
+                    </div>
+                    <group>
+                        <field
+                            name="key_file"
+                            filename="key_filename"
+                            invisible="paste_key"
+                        />
+                        <field name="key_filename" invisible="1" />
+                        <field
+                            name="private_key"
+                            invisible="not paste_key"
+                            placeholder="-----BEGIN PRIVATE KEY----- ..."
+                        />
+                        <field name="paste_key" />
+                        <field
+                            name="application_id"
+                            placeholder="aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+                        />
+                    </group>
+                </div>
+
+                <!-- Step 4: bank -->
+                <div invisible="step != 'bank'">
+                    <h2>Choose your bank</h2>
+                    <p>
+                        After <em>Connect</em> you log in to the bank and confirm
+                        access to your accounts (read only: balances and
+                        transactions). Odoo then creates a bank journal for every
+                        account and downloads the last month.
+                    </p>
+                    <div
+                        class="alert alert-danger"
+                        role="alert"
+                        invisible="not load_error"
+                    >
+                        Could not load the list of banks:
+                        <field name="load_error" class="d-inline" />
+                    </div>
+                    <p invisible="not journal_id" class="text-muted">
+                        The first new account returned by the bank is linked to
+                        the journal <field
+                        name="journal_id"
+                        readonly="1"
+                        class="d-inline"
+                    />.
+                    </p>
+                    <group>
+                        <group>
+                            <field name="country_code" invisible="all_countries" />
+                            <field name="all_countries" />
+                            <field name="psu_type" widget="radio" />
+                        </group>
+                        <group>
+                            <field name="bank_search" placeholder="e.g. mBank" />
+                            <button
+                                name="action_load_banks"
+                                type="object"
+                                string="Search"
+                                class="btn-secondary"
+                                colspan="2"
+                            />
+                        </group>
+                    </group>
+                    <field name="line_ids" readonly="1" nolabel="1">
+                        <list>
+                            <field name="name" />
+                            <field name="bic" optional="show" />
+                            <field name="country_code" optional="show" />
+                            <field name="beta" optional="hide" />
+                            <button
+                                name="action_select"
+                                type="object"
+                                string="Connect"
+                                class="btn-primary"
+                            />
+                        </list>
+                    </field>
+                </div>
+
+                <footer>
+                    <button
+                        name="action_have_application"
+                        type="object"
+                        string="I have the application"
+                        class="btn-primary"
+                        invisible="step != 'guide'"
+                    />
+                    <button
+                        name="action_save_credentials"
+                        type="object"
+                        string="Save and choose the bank"
+                        class="btn-primary"
+                        invisible="step != 'credentials'"
+                    />
+                    <button
+                        name="action_have_application"
+                        type="object"
+                        string="Change application key"
+                        class="btn-secondary"
+                        invisible="step != 'bank'"
+                    />
+                    <button
+                        name="action_back"
+                        type="object"
+                        string="Back"
+                        class="btn-secondary"
+                        invisible="step not in ('guide', 'credentials')"
+                    />
+                    <button string="Cancel" class="btn-secondary" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="l10n_pl_eb_connect_action" model="ir.actions.server">
+        <field name="name">Connect bank</field>
+        <field name="model_id" ref="account.model_account_journal" />
+        <field name="group_ids" eval="[(4, ref('account.group_account_manager'))]" />
+        <field name="state">code</field>
+        <field name="code">action = model.action_l10n_pl_eb_connect()</field>
+    </record>
+</odoo>

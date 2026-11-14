@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="account_journal_dashboard_kanban_view" model="ir.ui.view">
+        <field
+            name="name"
+        >account.journal.dashboard.kanban (l10n_pl_enablebanking)</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.account_journal_dashboard_kanban_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='bank_account_id']" position="after">
+                <field name="online_bank_statement_provider" />
+            </xpath>
+            <xpath
+                expr="//div[@name='bank_cash_buttons']/t[@t-set='bank_requires_setup']"
+                position="after"
+            >
+                <t
+                    t-set="l10n_pl_eb_connected"
+                    t-value="record.online_bank_statement_provider.raw_value == 'l10n_pl_enablebanking'"
+                />
+                <button
+                    t-if="journal_type == 'bank' and !l10n_pl_eb_connected"
+                    name="action_l10n_pl_eb_connect"
+                    type="object"
+                    class="btn btn-primary"
+                    groups="account.group_account_manager"
+                >Connect bank</button>
+                <button
+                    t-if="journal_type == 'bank' and l10n_pl_eb_connected"
+                    name="action_l10n_pl_eb_pull"
+                    type="object"
+                    class="btn btn-secondary"
+                    groups="account.group_account_user,account.group_account_manager"
+                >Refresh</button>
+                <button
+                    t-if="journal_type == 'bank' and l10n_pl_eb_connected"
+                    name="action_l10n_pl_eb_add_bank"
+                    type="object"
+                    class="btn btn-link"
+                    groups="account.group_account_manager"
+                >Add bank</button>
+            </xpath>
+            <xpath expr="//div[@id='action_card_statements']" position="after">
+                <div
+                    t-if="journal_type == 'bank'"
+                    groups="account.group_account_manager"
+                >
+                    <a
+                        role="menuitem"
+                        type="object"
+                        name="action_l10n_pl_eb_add_bank"
+                    >Add bank</a>
+                </div>
+            </xpath>
+        </field>
+    </record>
+    <record id="view_account_journal_form" model="ir.ui.view">
+        <field name="name">account.journal.form (l10n_pl_enablebanking)</field>
+        <field name="model">account.journal</field>
+        <field name="inherit_id" ref="account.view_account_journal_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='bank_account_number']" position="after">
+                <group
+                    name="l10n_pl_vat_account"
+                    string="Split payment (MPP)"
+                    invisible="type != 'bank'"
+                    groups="account.group_account_manager"
+                >
+                    <field name="l10n_pl_vat_account_number" />
+                    <field name="l10n_pl_vat_journal_id" />
+                    <field name="l10n_pl_vat_match_regex" />
+                    <field name="l10n_pl_vat_empty_lines" />
+                    <field
+                        name="l10n_pl_vat_auto_reconcile"
+                        invisible="not l10n_pl_vat_journal_id"
+                    />
+                    <div colspan="2" invisible="l10n_pl_vat_journal_id">
+                        <button
+                            name="action_l10n_pl_vat_create_journal"
+                            type="object"
+                            string="Create VAT account journal"
+                            class="btn-link ps-0"
+                            icon="fa-plus"
+                        />
+                    </div>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="online_bank_statement_provider_form" model="ir.ui.view">
+        <field
+            name="name"
+        >online.bank.statement.provider.form (l10n_pl_enablebanking)</field>
+        <field name="model">online.bank.statement.provider</field>
+        <field
+            name="inherit_id"
+            ref="account_statement_import_online.online_bank_statement_provider_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='main']" position="inside">
+                <group
+                    name="l10n_pl_enablebanking"
+                    string="Enable Banking"
+                    invisible="service != 'l10n_pl_enablebanking'"
+                >
+                    <field name="l10n_pl_eb_connection_id" />
+                    <field
+                        name="l10n_pl_eb_connection_state"
+                        invisible="not l10n_pl_eb_connection_id"
+                    />
+                    <field
+                        name="l10n_pl_eb_valid_until"
+                        invisible="not l10n_pl_eb_connection_id"
+                    />
+                    <field name="l10n_pl_eb_date_type" />
+                    <field
+                        name="l10n_pl_eb_balance"
+                        invisible="not l10n_pl_eb_balance_date"
+                    />
+                    <field
+                        name="l10n_pl_eb_balance_type"
+                        invisible="not l10n_pl_eb_balance_date"
+                    />
+                    <field
+                        name="l10n_pl_eb_balance_date"
+                        invisible="not l10n_pl_eb_balance_date"
+                    />
+                    <field name="l10n_pl_eb_account_uid" groups="base.group_no_one" />
+                    <button
+                        name="action_l10n_pl_eb_connect"
+                        string="Connect bank"
+                        type="object"
+                        class="btn-primary"
+                        colspan="2"
+                        invisible="l10n_pl_eb_account_uid"
+                        groups="account.group_account_manager"
+                    />
+                </group>
+            </xpath>
+            <xpath expr="//sheet" position="inside">
+                <group
+                    name="l10n_pl_eb_bank_data"
+                    string="Data from the bank"
+                    invisible="service != 'l10n_pl_enablebanking'"
+                >
+                    <field
+                        name="l10n_pl_eb_account_data"
+                        widget="text"
+                        readonly="1"
+                        colspan="2"
+                    />
+                    <field
+                        name="l10n_pl_eb_balances_data"
+                        widget="text"
+                        readonly="1"
+                        colspan="2"
+                    />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
