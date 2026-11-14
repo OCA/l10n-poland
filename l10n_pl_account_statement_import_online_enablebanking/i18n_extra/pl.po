@@ -1,0 +1,450 @@
+# Polish translation of account_statement_import_online labels,
+# shipped with l10n_pl_account_statement_import_online_enablebanking
+# until the upstream module has its own pl.po.
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_needaction
+msgid "Action Needed"
+msgstr "Wymagane działanie"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__active
+msgid "Active"
+msgstr "Aktywne"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__api_base
+msgid "Api Base"
+msgstr "Adres API"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_filter
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_form
+msgid "Archived"
+msgstr "Zarchiwizowane"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_attachment_count
+msgid "Attachment Count"
+msgstr "Liczba załączników"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_pull_wizard_form
+msgid "Cancel"
+msgstr "Anuluj"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__certificate
+msgid "Certificate"
+msgstr "Certyfikat"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__certificate_chain
+msgid "Certificate Chain"
+msgstr "Łańcuch certyfikatów"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__certificate_private_key
+msgid "Certificate Private Key"
+msgstr "Klucz prywatny certyfikatu"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__certificate_public_key
+msgid "Certificate Public Key"
+msgstr "Klucz publiczny certyfikatu"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_pull_debug_form
+msgid "Close"
+msgstr "Zamknij"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__company_id
+msgid "Company"
+msgstr "Firma"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__company_id
+msgid "Company related to this journal"
+msgstr "Firma związana z tym dziennikiem"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_form
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.view_account_journal_form
+msgid "Configuration"
+msgstr "Konfiguracja"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid "Create Statement"
+msgstr "Twórz wyciąg"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__create_statement
+msgid ""
+"Create statements for the downloaded transactions automatically or not."
+msgstr "Czy z pobranych transakcji tworzyć wyciągi automatycznie."
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_uid
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__create_uid
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__create_uid
+msgid "Created by"
+msgstr "Utworzył(a)"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__create_date
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__create_date
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__create_date
+msgid "Created on"
+msgstr "Data utworzenia"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__currency_id
+msgid "Currency"
+msgstr "Waluta"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__daily
+msgid "Day"
+msgstr "Dzień"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__days
+msgid "Day(s)"
+msgstr "Dni"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__display_name
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__display_name
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__display_name
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__display_name
+msgid "Display Name"
+msgstr "Nazwa wyświetlana"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_pull_wizard_form
+msgid "Fetch and display transaction data (for debug purposes)"
+msgstr "Pobierz i pokaż dane transakcji (do diagnostyki)"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_follower_ids
+msgid "Followers"
+msgstr "Obserwujący"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Obserwujący (kontrahenci)"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__date_since
+msgid "From"
+msgstr "Od"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__has_message
+msgid "Has Message"
+msgstr "Ma wiadomość"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__hours
+msgid "Hour(s)"
+msgstr "Godziny"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__id
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__id
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__id
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Jeśli zaznaczone, nowe wiadomości wymagają twojej uwagi."
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+"Jeśli zaznaczone, niektóre wiadomości napotkały błędy podczas doręczenia."
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_pull_wizard_form
+msgid "Import Transactions"
+msgstr "Importuj transakcje"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__interval_type
+msgid "Interval Type"
+msgstr "Jednostka okresu"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_is_follower
+msgid "Is Follower"
+msgstr "Jest obserwatorem"
+
+#. module: account_statement_import_online
+#: model:ir.model,name:account_statement_import_online.model_account_journal
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__journal_id
+msgid "Journal"
+msgstr "Dziennik"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__key
+msgid "Key"
+msgstr "Klucz"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__write_uid
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__write_uid
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__write_uid
+msgid "Last Updated by"
+msgstr "Ostatnio aktualizowane przez"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__write_date
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__write_date
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__write_date
+msgid "Last Updated on"
+msgstr "Data ostatniej aktualizacji"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__last_successful_run
+msgid "Last successful pull"
+msgstr "Ostatnie udane pobranie"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_has_error
+msgid "Message Delivery error"
+msgstr "Błąd doręczenia wiadomości"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_ids
+msgid "Messages"
+msgstr "Wiadomości"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__minutes
+msgid "Minute(s)"
+msgstr "Minuty"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__monthly
+msgid "Month"
+msgstr "Miesiąc"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__name
+msgid "Name"
+msgstr "Nazwa"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__next_run
+msgid "Next scheduled pull"
+msgstr "Następne zaplanowane pobranie"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Liczba akcji"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__message_has_error_counter
+msgid "Number of errors"
+msgstr "Liczba błędów"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Liczba wiadomości wymagających działania"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Liczba wiadomości z błędami przy doręczeniu"
+
+#. module: account_statement_import_online
+#: model:ir.model,name:account_statement_import_online.model_online_bank_statement_provider
+#: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__online_bank_statement_provider
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_form
+msgid "Online Bank Statement Provider"
+msgstr "Dostawca wyciągów bankowych online"
+
+#. module: account_statement_import_online
+#: model:ir.actions.act_window,name:account_statement_import_online.online_bank_statement_provider_action
+#: model:ir.ui.menu,name:account_statement_import_online.online_bank_statement_provider_menu
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_filter
+msgid "Online Bank Statement Providers"
+msgstr "Dostawcy wyciągów bankowych online"
+
+#. module: account_statement_import_online
+#: model:ir.model,name:account_statement_import_online.model_online_bank_statement_pull_debug
+msgid "Online Bank Statement Pull Debug Wizard"
+msgstr "Kreator diagnostyki pobierania wyciągów online"
+
+#. module: account_statement_import_online
+#: model:ir.model,name:account_statement_import_online.model_online_bank_statement_pull_wizard
+msgid "Online Bank Statement Pull Wizard"
+msgstr "Kreator pobierania wyciągów bankowych online"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.view_account_journal_form
+msgid "Online Bank Statements (OCA)"
+msgstr "Wyciągi bankowe online (OCA)"
+
+#. module: account_statement_import_online
+#: model:ir.actions.act_window,name:account_statement_import_online.action_online_bank_statements_pull_wizard
+msgid "Online Bank Statements Pull Wizard"
+msgstr "Kreator pobierania wyciągów bankowych online"
+
+#. module: account_statement_import_online
+#: model:ir.actions.act_window,name:account_statement_import_online.online_bank_statement_pull_debug_action
+msgid "Online bank statements - Debug"
+msgstr "Wyciągi bankowe online – diagnostyka"
+
+#. module: account_statement_import_online
+#: model:ir.model.constraint,message:account_statement_import_online.constraint_online_bank_statement_provider_journal_id_uniq
+msgid "Only one online banking statement provider per journal!"
+msgstr "Dziennik może mieć tylko jednego dostawcę wyciągów online."
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__origin
+msgid "Origin"
+msgstr "Pochodzenie"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__passphrase
+msgid "Passphrase"
+msgstr "Hasło klucza"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__password
+msgid "Password"
+msgstr "Hasło"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.view_account_journal_form
+msgid "Provider"
+msgstr "Dostawca"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_form
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.view_account_journal_form
+msgid "Pull Online Bank Statement"
+msgstr "Pobierz wyciąg bankowy online"
+
+#. module: account_statement_import_online
+#: model:ir.actions.server,name:account_statement_import_online.ir_cron_account_pull_online_bank_statements_ir_actions_server
+msgid "Pull Online Bank Statements"
+msgstr "Pobieranie wyciągów bankowych online"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_debug__data
+msgid "RAW data"
+msgstr "Surowe dane"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__account_number
+msgid "Sanitized Account Number"
+msgstr "Numer rachunku bez spacji"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_form
+msgid "Scheduled Pull"
+msgstr "Pobieranie automatyczne"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__interval_number
+msgid "Scheduled update interval"
+msgstr "Odstęp między pobraniami"
+
+#. module: account_statement_import_online
+#: model:ir.model.constraint,message:account_statement_import_online.constraint_online_bank_statement_provider_valid_interval_number
+msgid "Scheduled update interval must be greater than zero!"
+msgstr "Odstęp między pobraniami musi być większy od zera."
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__service
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_provider_filter
+msgid "Service"
+msgstr "Usługa"
+
+#. module: account_statement_import_online
+#: model_terms:ir.ui.view,arch_db:account_statement_import_online.online_bank_statement_pull_wizard_form
+msgid "Show Transaction Data"
+msgstr "Pokaż dane transakcji"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_account_journal__online_bank_statement_provider_id
+msgid "Statement Provider"
+msgstr "Dostawca wyciągów"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__currency_id
+msgid "The currency used to enter statement"
+msgstr "Waluta zastosowana do wprowadzenia wyciągu"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__tz
+msgid "Timezone"
+msgstr "Strefa czasowa"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__tz
+msgid ""
+"Timezone to convert transaction timestamps to prior being saved into a "
+"statement."
+msgstr ""
+"Strefa czasowa, na którą przeliczane są daty i godziny transakcji przed "
+"zapisaniem ich w wyciągu."
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_pull_wizard__date_until
+msgid "To"
+msgstr "Do"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__statement_creation_mode
+msgid "Transactions interval to obtain"
+msgstr "Wyciąg obejmuje"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__update_schedule
+msgid "Update Schedule"
+msgstr "Harmonogram pobierania"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__username
+msgid "Username"
+msgstr "Nazwa użytkownika"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,field_description:account_statement_import_online.field_online_bank_statement_provider__website_message_ids
+msgid "Website Messages"
+msgstr "Wiadomości"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields,help:account_statement_import_online.field_online_bank_statement_provider__website_message_ids
+msgid "Website communication history"
+msgstr "Historia komunikacji"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__statement_creation_mode__weekly
+msgid "Week"
+msgstr "Tydzień"
+
+#. module: account_statement_import_online
+#: model:ir.model.fields.selection,name:account_statement_import_online.selection__online_bank_statement_provider__interval_type__weeks
+msgid "Week(s)"
+msgstr "Tygodnie"

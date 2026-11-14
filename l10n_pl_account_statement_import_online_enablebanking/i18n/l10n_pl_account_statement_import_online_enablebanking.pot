@@ -1,0 +1,1402 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pl_account_statement_import_online_enablebanking
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-14 00:01+0000\n"
+"PO-Revision-Date: 2026-11-14 00:01+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_refresh.py:0
+msgid "%(updated)s lines updated, %(kept)s reconciled lines kept."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid ""
+"%s is not connected to the bank or the consent expired. Renew it in Bank > "
+"Bank connections."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "-----BEGIN PRIVATE KEY----- ..."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<em>Allowed redirect URLs</em>: paste this\n"
+"                                    address:"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<em>Privacy URL</em> and <em>Terms URL</em>\n"
+"                                    are required in Production: links to the\n"
+"                                    privacy policy and terms of your website.\n"
+"                                    Also enter an e-mail for data protection\n"
+"                                    matters."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<strong>Come back here</strong> and click\n"
+"                            <em>I have the application</em>: upload the .pem file\n"
+"                            and choose your bank."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<strong>Create a free account.</strong>\n"
+"                            Open"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<strong>Link your accounts.</strong>\n"
+"                            On the list of applications click <em>Activate by\n"
+"                            linking accounts</em> (Link accounts) next to the new\n"
+"                            application. Choose Poland, the bank and\n"
+"                            <em>Business</em> or <em>Personal</em>, log in to the\n"
+"                            bank and tick the accounts. Repeat for every bank.\n"
+"                            Without this the application sees no accounts. The\n"
+"                            bank asks here for a consent of one day only: it just\n"
+"                            puts the accounts on the allowed list. Odoo will ask\n"
+"                            for its own consent of up to 180 days."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<strong>Register the application.</strong>\n"
+"                            In the top menu open"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"<strong>Test bank.</strong>\n"
+"                            In the next step choose a test bank (for example\n"
+"                            <em>Mock ASPSP</em>) and log in with the test data\n"
+"                            from the Enable Banking documentation."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "API applications"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "Account %(account)s not linked: %(error)s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_account_uid
+msgid "Account UID"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_account_data
+msgid "Account data from the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__psu_type
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__psu_type
+msgid "Account type"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_list
+msgid "Accounts"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__active_connection_count
+msgid "Active Connection Count"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.account_journal_dashboard_kanban_view
+msgid "Add bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"After <em>Connect</em> you log in to the bank and confirm\n"
+"                        access to your accounts (read only: balances and\n"
+"                        transactions). Odoo then creates a bank journal for every\n"
+"                        account and downloads the last month."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"An application is already saved for this company.\n"
+"                        Entering a new one replaces it."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__step__credentials
+msgid "Application"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__application_id
+msgid "Application ID"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_res_company__l10n_pl_eb_application_id
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_res_config_settings__l10n_pl_eb_application_id
+msgid "Application ID (key ID) from the Enable Banking control panel."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Application ID and key"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__auth_state
+msgid "Auth State"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__bic
+msgid "BIC"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Back"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Balance after transaction"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_balance_date
+msgid "Balance checked on"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_balance
+msgid "Balance in the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_balance_type
+msgid "Balance type"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_balances_data
+msgid "Balances from the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_aspsp_name
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__step__bank
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_bank
+msgid "Bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__aspsp_name
+msgid "Bank (ASPSP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+#: model:ir.actions.act_window,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_bank_accounts_action
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_bank_accounts
+msgid "Bank accounts"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_connection_id
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid "Bank connection"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.actions.act_window,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_action
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_connections
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_list
+msgid "Bank connections"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"Bank connections of this company use the current\n"
+"                        application. After changing it they stop working until\n"
+"                        you connect the banks again."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__aspsp_country
+msgid "Bank country"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__target_journal_id
+msgid ""
+"Bank journal from which the connection was started. The first account "
+"returned by the bank that matches no other journal is linked to it instead "
+"of creating a new journal."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Bank note"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Bank reference"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_statement_line_list
+msgid "Bank transactions"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__all_countries
+msgid "Banks from all countries"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__beta
+msgid "Beta"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_auto_reconcile
+msgid ""
+"Book recognised transfers (and their mirror lines) on the internal transfer "
+"account of the company right after download."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__online_bank_statement_provider__l10n_pl_eb_date_type__booking_date
+msgid "Booking date"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__psu_type__business
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__psu_type__business
+msgid "Business"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_refresh_form
+msgid "Cancel"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Change application key"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Choose your bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"Click <strong>Register</strong>. The browser\n"
+"                            downloads a <strong>.pem</strong> file named like\n"
+"                            <code>aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee.pem</code>.\n"
+"                            The file name is the application ID. Keep the file\n"
+"                            safe and do not send it by e-mail or chat."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__company_id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__company_id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__company_id
+msgid "Company"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Connect"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+#: model:ir.actions.server,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_action
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_connect
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.account_journal_dashboard_kanban_view
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.online_bank_statement_provider_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.res_config_settings_view_form
+msgid "Connect bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.actions.act_window,help:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_action
+msgid "Connect your first bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__state__active
+msgid "Connected"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid ""
+"Connected. Linked accounts: %(accounts)s. Consent valid until %(until)s."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__connection_id
+msgid "Connection"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_connection_state
+msgid "Connection status"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__state__expired
+msgid "Consent expired"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__expiry_warned
+msgid "Consent expiry warning sent"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "Consent revoked."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__valid_until
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_valid_until
+msgid "Consent valid until"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__control_panel_url
+msgid "Control Panel Url"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Could not load the list of banks:"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Counterparty"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Counterparty account"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Counterparty address"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Counterparty bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__country_code
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__country_code
+msgid "Country"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.view_account_journal_form
+msgid "Create VAT account journal"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Create the application in Enable Banking"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__create_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__create_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__create_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__create_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Credit"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.online_bank_statement_provider_form
+msgid "Data from the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__l10n_pl_eb_date_type
+msgid "Date used for statement lines"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Debit"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_refresh.py:0
+msgid ""
+"Descriptions downloaded again for %(since)s - %(until)s: %(updated)s lines "
+"updated, %(kept)s reconciled lines kept (only raw data saved), %(missing)s "
+"transactions not imported yet (they come with the next download)."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid "Disconnect"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__state__revoked
+msgid "Disconnected"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_bank_statement_line__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_company__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Do you already have an application in Enable Banking?"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_refresh_form
+msgid "Download again"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.actions.act_window,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_refresh_action
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_refresh_form
+msgid "Download descriptions again"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid "Download now"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_l10n_pl_eb_refresh
+msgid "Download the descriptions of imported lines again"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.res_config_settings_view_form
+msgid ""
+"Download transactions from Polish and European banks. Enter the application "
+"from the Enable Banking control panel once; then connect banks with Bank > "
+"Connect bank."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.online_bank_statement_provider_form
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.res_config_settings_view_form
+msgid "Enable Banking"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_company__l10n_pl_eb_application_id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_config_settings__l10n_pl_eb_application_id
+msgid "Enable Banking application ID"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid ""
+"Enable Banking did not accept this application ID and key: %s. Check that "
+"the ID matches the name of the .pem file and that the application is active."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_company__l10n_pl_eb_private_key
+msgid "Enable Banking private key (PEM)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_l10n_pl_eb_connect_bank
+msgid "Enable Banking: bank (ASPSP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_l10n_pl_eb_connection
+msgid "Enable Banking: bank connection"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_l10n_pl_eb_connect
+msgid "Enable Banking: connect bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.res_config_settings_view_form
+msgid "Enter or change the application"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid ""
+"Enter the Enable Banking application ID and private key first (Bank > "
+"Connect bank)."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid ""
+"Enter the application ID: it is the name of the .pem file without the "
+"extension, or the ID shown on the list of API applications in the Enable "
+"Banking control panel."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__environment
+msgid "Environment"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "First download failed: %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__date_since
+msgid "From"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__step__guide
+msgid "Guide"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__has_credentials
+msgid "Has Credentials"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__has_message
+msgid "Has Message"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "I have the application"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_bank_statement_line__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_online_bank_statement_provider__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_company__id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_res_config_settings__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_error
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_import_file
+msgid "Import from file"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "Internal transfer (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "Internal transfer: VAT account (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "Invalid regular expression: %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "It takes about 10 minutes. Keep this window open."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_account_journal
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid "Journal"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__journal_count
+msgid "Journal Count"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__journal_id
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__target_journal_id
+msgid "Journal to connect"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__key_filename
+msgid "Key Filename"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__key_file
+msgid "Key file (.pem)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__write_uid
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__write_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__write_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__write_date
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__line_ids
+msgid "Line"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__provider_ids
+msgid "Linked accounts"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "Linking failed: %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__all_countries
+msgid ""
+"List every bank available through Enable Banking, not only the banks of the "
+"selected country (e.g. Revolut or a bank abroad)."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__load_error
+msgid "Load Error"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__max_validity
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__max_validity
+msgid "Maximum consent validity (s)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Merchant category code"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.actions.act_window,help:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_bank_accounts_action
+msgid "No bank account yet"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "No, show me how to create it"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_account_number
+msgid ""
+"Number of the VAT account (split payment) linked to this bank account. "
+"Transfers to and from it are recognised in downloaded transactions."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_refresh_form
+msgid ""
+"Odoo asks the bank for the transactions of the period\n"
+"                    again and updates the title, counterparty, account, note and\n"
+"                    raw data of the lines already imported. Reconciled lines keep\n"
+"                    their booking; only their raw data is saved. Nothing is\n"
+"                    deleted and no line is added."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"Odoo connects to banks through <strong>Enable Banking</strong>, a licensed account information\n"
+"                        service provider (AISP) supervised in the EU. You need a\n"
+"                        free account there and one <strong>application</strong>: an application ID and a key file\n"
+"                        (.pem). You set it up once. After that, every bank is one\n"
+"                        click and a login in the bank."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid ""
+"Odoo could not reach Enable Banking (%s). Check that the server has internet"
+" access and try again."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model,name:l10n_pl_account_statement_import_online_enablebanking.model_online_bank_statement_provider
+msgid "Online Bank Statement Provider"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_journal_id
+msgid ""
+"Optional bank journal of the VAT account. Each recognised transfer gets a "
+"mirror line there, so the balance of the VAT account is visible in Odoo."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_match_regex
+msgid ""
+"Optional regular expression searched (case insensitive) in the raw data of "
+"each downloaded transaction, e.g. a bank transaction code used by your bank "
+"for transfers to the VAT account. Leave empty to recognise them only by the "
+"VAT account number."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Outgoing VAT transfer (split payment)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Paid from the VAT account: %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__paste_key
+msgid "Paste the key instead of uploading the file"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__psu_type__personal
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__psu_type__personal
+msgid "Personal"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__private_key
+msgid "Private key (PEM)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"Production is free in the restricted mode, for the\n"
+"                        accounts you link yourself. For permanent use in a company\n"
+"                        Enable Banking requires a contract and verification of the\n"
+"                        company; ask them for the price."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__environment__production
+msgid "Production: my real accounts"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_res_company__l10n_pl_eb_private_key
+msgid ""
+"RSA private key downloaded when the application was registered in the Enable"
+" Banking control panel."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_match_regex
+msgid "Recognise VAT transfers by"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_empty_lines
+msgid "Recognise split payment in lines without description"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_auto_reconcile
+msgid "Reconcile VAT transfers automatically"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__redirect_url
+msgid "Redirect Url"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Reference"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.account_journal_dashboard_kanban_view
+msgid "Refresh"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid "Renew consent"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "Return to the settlement account (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_form
+msgid ""
+"Revoke the consent given to the bank? Odoo will stop downloading "
+"transactions; the journals and statements stay."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__environment__sandbox
+msgid "Sandbox: test banks with sample data"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Save and choose the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Search"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__bank_search
+msgid "Search bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__session_id
+msgid "Session ID"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__sign_in_url
+msgid "Sign In Url"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "Skipped (no account number): %s."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_empty_lines
+msgid ""
+"Some banks (e.g. Bank Millennium) send split payment movements without "
+"title, counterparty, account or transaction code. With this option an empty "
+"credit and an empty debit of the same day whose amount is the VAT of the "
+"credit (23%, 8% or 5%) become a customer payment (gross) and the transfer of"
+" its VAT to the VAT account; an empty credit equal to the VAT of an outgoing"
+" split payment becomes a transfer from the VAT account. A payment to a "
+"counterparty without title next to the bank fee for an outgoing VAT transfer"
+" becomes an outgoing split payment. An empty credit equal to (or smaller "
+"than) a payment to the tax office or ZUS of the same day becomes a transfer "
+"from the VAT account. Other empty lines are left as they are."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.view_account_journal_form
+msgid "Split payment (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Split payment receipt (gross)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid ""
+"Split payment: gross %(gross).2f, VAT %(vat).2f moved to the VAT account the"
+" same day."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connect__step__start
+msgid "Start"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__state
+msgid "State"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_statements
+msgid "Statements"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect__step
+msgid "Step"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "The bank consent expires on %s. Renew it with 'Renew consent'."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/controllers/main.py:0
+msgid "The bank returned an error (%(error)s %(desc)s)."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid ""
+"The consent expired. Click 'Renew consent' to log in to the bank again."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"The first new account returned by the bank is linked to\n"
+"                        the journal"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid "The key file is not a text .pem file."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_refresh.py:0
+msgid "The start date is after the end date."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid ""
+"This is not a valid private key. Use the .pem file downloaded from Enable "
+"Banking. (%s)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Title"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_refresh__date_until
+msgid "To"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.actions.act_window,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_statement_line_to_reconcile_action
+#: model:ir.actions.server,name:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_to_reconcile_server_action
+#: model:ir.ui.menu,name:l10n_pl_account_statement_import_online_enablebanking.menu_l10n_pl_eb_to_reconcile
+msgid "To reconcile"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_statement_line_list
+msgid "Total"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Transaction code"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__online_bank_statement_provider__l10n_pl_eb_date_type__transaction_date
+msgid "Transaction date"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Transfer from the VAT account (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "Transfer from the settlement account (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "Transfer to the VAT account (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"Upload the .pem file downloaded when you registered the\n"
+"                        application. The application ID is usually filled in\n"
+"                        from the file name; if the field stays empty, enter it\n"
+"                        yourself (the file name without .pem, or the ID from the\n"
+"                        list of API applications). Only accounting managers can\n"
+"                        see the key."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid ""
+"Upload the .pem file downloaded when you registered the application, or "
+"paste its content."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.actions.act_window,help:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_bank_accounts_action
+msgid "Use <strong>Bank &gt; Connect bank</strong> to add your accounts."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.actions.act_window,help:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connection_action
+msgid ""
+"Use <strong>Bank &gt; Connect bank</strong>: choose the bank, log\n"
+"                in, and Odoo creates a bank journal for every account and\n"
+"                downloads the transactions every day."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_account_number
+msgid "VAT account"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/account_journal.py:0
+msgid "VAT account %(number)s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_account_journal__l10n_pl_vat_journal_id
+msgid "VAT account journal"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "VAT of the outgoing payment to %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+msgid "VAT of the outgoing payment: %s"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/online_bank_statement_provider.py:0
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__online_bank_statement_provider__l10n_pl_eb_date_type__value_date
+msgid "Value date"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields.selection,name:l10n_pl_account_statement_import_online_enablebanking.selection__l10n_pl_eb_connection__state__draft
+msgid "Waiting for the bank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,help:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connection__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "What do you want to connect?"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model:ir.model.fields,field_description:l10n_pl_account_statement_import_online_enablebanking.field_l10n_pl_eb_connect_bank__wizard_id
+msgid "Wizard"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "Yes, I have the application"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/wizards/l10n_pl_eb_connect.py:0
+msgid "You cannot connect banks for this company."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"and enter your e-mail.\n"
+"                            Click the login link you receive by e-mail. The\n"
+"                            account is created on the first login."
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"and fill in the form\n"
+"                            <em>Add a new application</em>:"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"application name: for example your company\n"
+"                                    name (the bank shows it when you give the\n"
+"                                    consent);"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "e.g. mBank"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "enablebanking.com/sign-in"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "environment: <strong>Production</strong>;"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid ""
+"environment: <strong>Sandbox</strong> (test\n"
+"                                    banks, sample data, nothing real);"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#. odoo-python
+#: code:addons/l10n_pl_account_statement_import_online_enablebanking/models/l10n_pl_eb_connection.py:0
+msgid "id"
+msgstr ""
+
+#. module: l10n_pl_account_statement_import_online_enablebanking
+#: model_terms:ir.ui.view,arch_db:l10n_pl_account_statement_import_online_enablebanking.l10n_pl_eb_connect_form
+msgid "private key: leave the first option, <em>generate in the browser</em>;"
+msgstr ""

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="l10n_pl_eb_connection_list" model="ir.ui.view">
+        <field name="name">l10n_pl.eb.connection.list</field>
+        <field name="model">l10n_pl.eb.connection</field>
+        <field name="arch" type="xml">
+            <list
+                string="Bank connections"
+                create="0"
+                decoration-muted="state == 'revoked'"
+                decoration-danger="state == 'expired'"
+                decoration-info="state == 'draft'"
+            >
+                <field name="name" />
+                <field name="psu_type" />
+                <field name="journal_count" string="Accounts" />
+                <field name="valid_until" />
+                <field
+                    name="state"
+                    widget="badge"
+                    decoration-success="state == 'active'"
+                    decoration-danger="state == 'expired'"
+                />
+                <field name="company_id" groups="base.group_multi_company" />
+            </list>
+        </field>
+    </record>
+
+    <record id="l10n_pl_eb_refresh_form" model="ir.ui.view">
+        <field name="name">l10n_pl.eb.refresh.form</field>
+        <field name="model">l10n_pl.eb.refresh</field>
+        <field name="arch" type="xml">
+            <form string="Download descriptions again">
+                <p>
+                    Odoo asks the bank for the transactions of the period
+                    again and updates the title, counterparty, account, note and
+                    raw data of the lines already imported. Reconciled lines keep
+                    their booking; only their raw data is saved. Nothing is
+                    deleted and no line is added.
+                </p>
+                <group>
+                    <field name="connection_id" readonly="1" />
+                    <field name="date_since" />
+                    <field name="date_until" />
+                </group>
+                <footer>
+                    <button
+                        name="action_refresh"
+                        type="object"
+                        string="Download again"
+                        class="btn-primary"
+                    />
+                    <button string="Cancel" special="cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="l10n_pl_eb_refresh_action" model="ir.actions.act_window">
+        <field name="name">Download descriptions again</field>
+        <field name="res_model">l10n_pl.eb.refresh</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="group_ids" eval="[(4, ref('account.group_account_manager'))]" />
+    </record>
+
+    <record id="l10n_pl_eb_connection_form" model="ir.ui.view">
+        <field name="name">l10n_pl.eb.connection.form</field>
+        <field name="model">l10n_pl.eb.connection</field>
+        <field name="arch" type="xml">
+            <form string="Bank connection" create="0">
+                <header>
+                    <button
+                        name="action_pull_now"
+                        type="object"
+                        string="Download now"
+                        class="btn-primary"
+                        invisible="state != 'active'"
+                    />
+                    <button
+                        name="action_reconnect"
+                        type="object"
+                        string="Renew consent"
+                        class="btn-primary"
+                        invisible="state not in ('expired', 'revoked', 'draft')"
+                        groups="account.group_account_manager"
+                    />
+                    <button
+                        name="action_reconnect"
+                        type="object"
+                        string="Renew consent"
+                        invisible="state != 'active'"
+                        groups="account.group_account_manager"
+                    />
+                    <button
+                        name="%(l10n_pl_eb_refresh_action)d"
+                        type="action"
+                        string="Download descriptions again"
+                        invisible="state != 'active'"
+                        groups="account.group_account_manager"
+                        context="{'default_connection_id': id}"
+                    />
+                    <button
+                        name="action_disconnect"
+                        type="object"
+                        string="Disconnect"
+                        invisible="state != 'active'"
+                        confirm="Revoke the consent given to the bank? Odoo will stop downloading transactions; the journals and statements stay."
+                        groups="account.group_account_manager"
+                    />
+                    <field
+                        name="state"
+                        widget="statusbar"
+                        statusbar_visible="draft,active"
+                    />
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button
+                            name="action_open_journals"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-university"
+                        >
+                            <field
+                                name="journal_count"
+                                widget="statinfo"
+                                string="Accounts"
+                            />
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name" readonly="1" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="psu_type" />
+                            <field name="aspsp_country" />
+                            <field name="valid_until" />
+                        </group>
+                        <group>
+                            <field
+                                name="company_id"
+                                groups="base.group_multi_company"
+                            />
+                            <field
+                                name="target_journal_id"
+                                invisible="not target_journal_id"
+                            />
+                            <field name="session_id" groups="base.group_no_one" />
+                        </group>
+                    </group>
+                    <field name="provider_ids" readonly="1">
+                        <list>
+                            <field name="journal_id" string="Journal" />
+                            <field name="currency_id" optional="show" />
+                            <field name="l10n_pl_eb_balance" optional="show" />
+                            <field name="l10n_pl_eb_balance_date" optional="hide" />
+                            <field name="last_successful_run" />
+                            <field name="next_run" />
+                        </list>
+                    </field>
+                </sheet>
+                <chatter />
+            </form>
+        </field>
+    </record>
+
+    <record id="l10n_pl_eb_connection_action" model="ir.actions.act_window">
+        <field name="name">Bank connections</field>
+        <field name="res_model">l10n_pl.eb.connection</field>
+        <field name="view_mode">list,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">Connect your first bank</p>
+            <p>
+                Use <strong>Bank &gt; Connect bank</strong>: choose the bank, log
+                in, and Odoo creates a bank journal for every account and
+                downloads the transactions every day.
+            </p>
+        </field>
+    </record>
+
+    <!-- Bank lines waiting for reconciliation (fallback without account_reconcile_oca) -->
+    <record id="l10n_pl_eb_statement_line_list" model="ir.ui.view">
+        <field
+            name="name"
+        >account.bank.statement.line.list (l10n_pl_enablebanking)</field>
+        <field name="model">account.bank.statement.line</field>
+        <field name="priority">90</field>
+        <field name="arch" type="xml">
+            <list string="Bank transactions" create="0" edit="0">
+                <field name="date" />
+                <field name="journal_id" />
+                <field name="payment_ref" />
+                <field name="partner_id" />
+                <field name="amount" sum="Total" />
+                <field name="currency_id" column_invisible="1" />
+                <field name="is_reconciled" optional="hide" />
+            </list>
+        </field>
+    </record>
+
+    <record
+        id="l10n_pl_eb_statement_line_to_reconcile_action"
+        model="ir.actions.act_window"
+    >
+        <field name="name">To reconcile</field>
+        <field name="res_model">account.bank.statement.line</field>
+        <field name="view_mode">list</field>
+        <field name="view_id" ref="l10n_pl_eb_statement_line_list" />
+        <field name="domain">[('is_reconciled', '=', False)]</field>
+    </record>
+
+    <record id="l10n_pl_eb_to_reconcile_server_action" model="ir.actions.server">
+        <field name="name">To reconcile</field>
+        <field name="model_id" ref="account.model_account_journal" />
+        <field name="state">code</field>
+        <field name="code">action = model._l10n_pl_eb_reconcile_action()</field>
+    </record>
+
+    <record id="l10n_pl_eb_bank_accounts_action" model="ir.actions.act_window">
+        <field name="name">Bank accounts</field>
+        <field name="res_model">account.journal</field>
+        <field name="view_mode">kanban,form</field>
+        <field name="view_id" ref="account.account_journal_dashboard_kanban_view" />
+        <field name="domain">[('type', '=', 'bank')]</field>
+        <field name="context">{'default_type': 'bank'}</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">No bank account yet</p>
+            <p>Use <strong>Bank &gt; Connect bank</strong> to add your accounts.</p>
+        </field>
+    </record>
+
+    <!-- Menu: Invoicing / Accounting > Bank -->
+    <menuitem
+        id="menu_l10n_pl_eb_bank"
+        name="Bank"
+        parent="account.menu_finance"
+        sequence="3"
+        groups="account.group_account_invoice"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_bank_accounts"
+        name="Bank accounts"
+        parent="menu_l10n_pl_eb_bank"
+        action="l10n_pl_eb_bank_accounts_action"
+        sequence="10"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_to_reconcile"
+        name="To reconcile"
+        parent="menu_l10n_pl_eb_bank"
+        action="l10n_pl_eb_to_reconcile_server_action"
+        sequence="20"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_statements"
+        name="Statements"
+        parent="menu_l10n_pl_eb_bank"
+        action="account.action_bank_statement_tree"
+        sequence="30"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_import_file"
+        name="Import from file"
+        parent="menu_l10n_pl_eb_bank"
+        action="account_statement_import_file.account_statement_import_action"
+        sequence="40"
+        groups="account.group_account_user,account.group_account_manager"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_connect"
+        name="Connect bank"
+        parent="menu_l10n_pl_eb_bank"
+        action="l10n_pl_eb_connect_action"
+        sequence="50"
+        groups="account.group_account_manager"
+    />
+    <menuitem
+        id="menu_l10n_pl_eb_connections"
+        name="Bank connections"
+        parent="menu_l10n_pl_eb_bank"
+        action="l10n_pl_eb_connection_action"
+        sequence="60"
+        groups="account.group_account_user,account.group_account_manager"
+    />
+</odoo>

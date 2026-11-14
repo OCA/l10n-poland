@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.form (l10n_pl_enablebanking)</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="account.res_config_settings_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='bank_cash']" position="inside">
+                <setting
+                    id="l10n_pl_enablebanking"
+                    string="Enable Banking"
+                    help="Download transactions from Polish and European banks. Enter the application from the Enable Banking control panel once; then connect banks with Bank > Connect bank."
+                    groups="account.group_account_manager"
+                >
+                    <div class="content-group">
+                        <div class="row mt-2">
+                            <label
+                                for="l10n_pl_eb_application_id"
+                                class="col-lg-4 o_light_label"
+                            />
+                            <field
+                                name="l10n_pl_eb_application_id"
+                                readonly="1"
+                                class="col-lg-8"
+                            />
+                        </div>
+                        <div class="mt-2">
+                            <button
+                                name="action_l10n_pl_eb_set_application"
+                                type="object"
+                                string="Enter or change the application"
+                                icon="oi-arrow-right"
+                                class="btn-link"
+                            />
+                        </div>
+                        <div>
+                            <button
+                                name="%(l10n_pl_eb_connect_action)d"
+                                type="action"
+                                string="Connect bank"
+                                icon="oi-arrow-right"
+                                class="btn-link"
+                            />
+                        </div>
+                    </div>
+                </setting>
+            </xpath>
+        </field>
+    </record>
+</odoo>

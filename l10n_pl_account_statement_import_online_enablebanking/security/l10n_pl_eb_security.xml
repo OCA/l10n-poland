@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="l10n_pl_eb_connection_company_rule" model="ir.rule">
+        <field name="name">Enable Banking connection: multi-company</field>
+        <field name="model_id" ref="model_l10n_pl_eb_connection" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+    <record id="l10n_pl_eb_connect_company_rule" model="ir.rule">
+        <field name="name">Enable Banking connect wizard: multi-company</field>
+        <field name="model_id" ref="model_l10n_pl_eb_connect" />
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+</odoo>
