@@ -1,9 +1,11 @@
 To enable scheduled currency rates update:
 
-\# Go to Invoicing \> Configuration \> Settings \# Ensure Automatic
-Currency Rates (OCA) is checked
+1. Go to *Invoicing \> Configuration \> Settings*.
+2. Make sure *Automatic Currency Rates (OCA)* is checked.
 
-To configure currency rates providers:
+To configure the National Bank of Poland provider:
 
-\# Go to Invoicing \> Configuration \> Currency Rates Providers \#
-Create and configure one or more providers
+1. Go to *Invoicing \> Configuration \> Currency Rates Providers*.
+2. Create a provider and select *National Bank of Poland* as the
+   *Provider*.
+3. Select the currencies to update and save.
