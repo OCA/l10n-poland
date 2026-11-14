@@ -1,0 +1,184 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_pl_account_payment_order_elixir
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 19.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-11-13 23:25+0000\n"
+"PO-Revision-Date: 2026-11-13 23:25+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "A split payment transfer must pay exactly one invoice (%s)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Account number \"%s\" has wrong check digits."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Account number \"%s\" is not a Polish NRB (26 digits)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_line__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_method__display_name
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_order__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:account.payment.method,name:l10n_pl_account_payment_order_elixir.payment_method_pl_elixir
+msgid "Elixir-O (Polish domestic transfers)"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Elixir-O transfers are in PLN only (%s)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_line.py:0
+msgid "Elixir-O transfers are in PLN only (payment line %s)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_line__id
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_method__id
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_order__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model,name:l10n_pl_account_payment_order_elixir.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Missing bank account of %s."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Missing bank account on journal %s."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,help:l10n_pl_account_payment_order_elixir.field_account_bank_statement_line__l10n_pl_split_payment_hint
+#: model:ir.model.fields,help:l10n_pl_account_payment_order_elixir.field_account_move__l10n_pl_split_payment_hint
+msgid ""
+"PLN bill above 15 000 PLN gross with VAT from a Polish supplier, not marked "
+"as split payment: check whether it covers goods or services from annex 15 to"
+" the VAT act."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,help:l10n_pl_account_payment_order_elixir.field_account_bank_statement_line__l10n_pl_split_payment
+#: model:ir.model.fields,help:l10n_pl_account_payment_order_elixir.field_account_move__l10n_pl_split_payment
+msgid ""
+"Pay this vendor bill with the split payment mechanism (mechanizm podzielonej"
+" płatności): the VAT part goes to the supplier's VAT account. Set "
+"automatically for bills imported from KSeF when the supplier marked the "
+"invoice with split payment (P_18A); otherwise tick it yourself."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model,name:l10n_pl_account_payment_order_elixir.model_account_payment_line
+msgid "Payment Lines"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model,name:l10n_pl_account_payment_order_elixir.model_account_payment_method
+msgid "Payment Methods"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model,name:l10n_pl_account_payment_order_elixir.model_account_payment_order
+msgid "Payment Order"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_bank_statement_line__l10n_pl_split_payment
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_move__l10n_pl_split_payment
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_line__l10n_pl_split_payment
+msgid "Split payment (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_line.py:0
+msgid ""
+"Split payment VAT amount of payment line %s must be positive and not above "
+"the transfer amount."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_bank_statement_line__l10n_pl_split_payment_hint
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_move__l10n_pl_split_payment_hint
+msgid "Split payment may apply"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_line.py:0
+msgid ""
+"Split payment needs the Polish NIP of %(partner)s (payment line %(line)s)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "Split payment needs the recipient NIP (10 digits), not \"%s\"."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "The payment order has no transfers."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_payment_order.py:0
+msgid "The transfer amount must be positive (%s)."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#. odoo-python
+#: code:addons/l10n_pl_account_payment_order_elixir/models/account_move.py:0
+msgid ""
+"This bill is above 15 000 PLN gross. If it covers goods or services from "
+"annex 15 to the VAT act, tick Split payment (MPP) before you pay it."
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,field_description:l10n_pl_account_payment_order_elixir.field_account_payment_line__l10n_pl_vat_amount
+msgid "VAT amount (MPP)"
+msgstr ""
+
+#. module: l10n_pl_account_payment_order_elixir
+#: model:ir.model.fields,help:l10n_pl_account_payment_order_elixir.field_account_payment_line__l10n_pl_vat_amount
+msgid ""
+"VAT part of this transfer sent to the supplier's VAT account. For a partial "
+"payment it is proportional to the paid amount."
+msgstr ""
