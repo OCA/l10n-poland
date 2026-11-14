@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo>
+    <record id="account_payment_line_form" model="ir.ui.view">
+        <field name="name">account.payment.line.form (l10n_pl split payment)</field>
+        <field name="model">account.payment.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_order.account_payment_line_form"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='communication']" position="after">
+                <field name="l10n_pl_split_payment" />
+                <field
+                    name="l10n_pl_vat_amount"
+                    invisible="not l10n_pl_split_payment"
+                />
+            </xpath>
+        </field>
+    </record>
+    <record id="account_payment_line_tree" model="ir.ui.view">
+        <field name="name">account.payment.line.list (l10n_pl split payment)</field>
+        <field name="model">account.payment.line</field>
+        <field
+            name="inherit_id"
+            ref="account_payment_order.account_payment_line_tree"
+        />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='communication']" position="after">
+                <field name="l10n_pl_split_payment" optional="show" />
+                <field name="l10n_pl_vat_amount" optional="show" />
+            </xpath>
+        </field>
+    </record>
+</odoo>

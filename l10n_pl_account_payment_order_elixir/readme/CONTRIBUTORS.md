@@ -1,0 +1,1 @@
+- Leszek Szczepkowski <https://szczepkowski.ai>

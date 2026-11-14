@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2026 Leszek Szczepkowski
+     License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl). -->
+<odoo noupdate="1">
+    <record id="payment_method_pl_elixir" model="account.payment.method">
+        <field name="name">Elixir-O (Polish domestic transfers)</field>
+        <field name="code">pl_elixir</field>
+        <field name="payment_type">outbound</field>
+        <field name="bank_account_required" eval="True" />
+    </record>
+</odoo>
